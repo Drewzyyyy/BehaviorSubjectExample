@@ -1,0 +1,25 @@
+<div class="flex align-middle justify-center">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        Current Data
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <ul>
+        <li *ngFor="let info of data">
+          {{info}}
+        </li>
+      </ul>
+    </mat-card-content>
+    <mat-card-actions class="flex justify-evenly">
+      <button mat-raised-button (click)="pop()">
+        Pop
+      </button>
+      <button mat-raised-button (click)="shift()">
+        Unshift
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
